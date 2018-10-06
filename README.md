@@ -11,4 +11,4 @@ the discrete distribution includes Uniform distribution, Exponential distributio
 
 The next program is the simulation of a 6-sided biased die roll.
 
-# More programs will be added to the repository as the semester proceeds. Thank you!
+### More programs will be added to the repository as the semester proceeds. Thank you!
