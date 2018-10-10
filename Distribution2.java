@@ -13,6 +13,10 @@ import org.jfree.data.xy.XYSeries;
 import org.jfree.data.xy.XYSeriesCollection;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
+import org.jfree.chart.plot.XYPlot;
+import org.jfree.chart.renderer.xy.XYLineAndShapeRenderer;
+
+
 /**
  *
  * @author ASHISH JAIs
@@ -167,6 +171,14 @@ public Distribution2(final String title,int x[],double y[])
     final JFreeChart chart = ChartFactory.createXYLineChart(
         "Distribution Graph","X","Y",data,
         PlotOrientation.VERTICAL,true,true,false);
+    XYPlot plot = (XYPlot) chart.getPlot();
+    XYLineAndShapeRenderer renderer = new XYLineAndShapeRenderer();
+    renderer.setSeriesLinesVisible(0, true);
+    renderer.setSeriesShapesVisible(1, false);
+    if(title=="Poisson Distribution graph")
+        renderer.setSeriesLinesVisible(0, false);
+    //renderer.setSeriesShapesVisible(1, true);        
+    plot.setRenderer(renderer);
     final ChartPanel chartPanel = new ChartPanel(chart);
     chartPanel.setPreferredSize(new java.awt.Dimension(500, 270));
     setContentPane(chartPanel);
