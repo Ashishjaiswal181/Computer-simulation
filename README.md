@@ -10,4 +10,6 @@
 
 - The fifth simulation is based on Chi-square method of testing a system on how well it produces a random number or is the system biased or unbiased using a example of dice rolling system. 
 
+- The sixth simulation is based on Covariance and Correlation of two random numbers which tells us about the extend of relation between two random numbers taken/generated.
+
 ### More programs will be added to the repository as the semester proceeds. Thank you!
